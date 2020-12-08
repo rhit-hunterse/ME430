@@ -1,21 +1,48 @@
-void setup()
-{
+int rPot=0;
+int bPot=0;
+
+void setup() {
   Serial.begin(9600); // com speed, bits per second
   pinMode(9, OUTPUT);
   pinMode(10, OUTPUT);
   pinMode(11, OUTPUT);
+  
+  pinMode(2, INPUT_PULLUP); //Add the pull up resistor
+  
+  //EXAMPLE FOR loop
+  for (int k=0; k<5;k++) {
+    Serial.println(k);
+    delay(500);
+  }
+    
 }
 
 void loop(){
-  red();
-  delay(1000);
-  //green();
- // delay(1000);
-  off();
-  delay(1000);
+  rPot=analogRead(0);
+  Serial.print("R=");
+  Serial.print(rPot);
+  
+  bPot=analogRead(1);
+  Serial.print("B=");
+  Serial.println(bPot);
+ //digitalWrite(10, HIGH);
+//  red();
+//  delay(1000);
+//  green();
+//  delay(1000);
+//  off();
+//  delay(1000);
   
   //rgb(61, 217, 212); //calls funtion and passes in the 100, 0, and 150
-}  
+  if ( digitalRead(2)) {
+    rgb(rPot/4, 0,bPot/4);
+  } else {
+    off();
+  }
+  
+  delay(500);
+}
+
 void rgb(int r, int g, int b) {
   //parameters should be 0 to 255
   analogWrite(9,r);
