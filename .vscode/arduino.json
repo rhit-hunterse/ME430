@@ -2,5 +2,5 @@
     "board": "arduino:avr:mega",
     "configuration": "cpu=atmega2560",
     "port": "COM4",
-    "sketch": "Follow alongs\\Learning C\\RGBJoystick\\RGBJoystick.ino"
+    "sketch": "Labs\\Transistors_Hbrigde_Motors\\PartB_Debug_LEDs\\PartB_Debug_LEDs.ino"
 }
