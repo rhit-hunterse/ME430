@@ -1,6 +1,5 @@
 {
     "board": "arduino:avr:mega",
     "configuration": "cpu=atmega2560",
-    "port": "COM4",
-    "sketch": "Labs\\Transistors_Hbrigde_Motors\\PartB_Debug_LEDs\\PartB_Debug_LEDs.ino"
+    "port": "COM4"
 }
