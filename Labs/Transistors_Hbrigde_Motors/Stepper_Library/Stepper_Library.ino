@@ -4,7 +4,6 @@ const int stepsPerRevolution = 2048;  // 32 steps * 64:1 gearhead; change this t
 // for your motor
 
 //const int stepsPerRevolution = 60; //Tell a LIE for now!
-
 // initialize the stepper library on pins 8 through 11:
 Stepper myStepper(stepsPerRevolution, 8, 10, 9, 11); // Order is important (1st two arguments= pair and 2nd two= pair)
 
