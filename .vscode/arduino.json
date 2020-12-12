@@ -2,6 +2,5 @@
     "board": "arduino:avr:mega",
     "configuration": "cpu=atmega2560",
     "port": "COM4",
-    "sketch": "Labs\\Transistors_Hbrigde_Motors\\Stepper_Library\\Stepper_Library.ino",
-    "programmer": "ArduinoISP"
+    "sketch": "Labs\\Transistors_Hbrigde_Motors\\Servo_motor\\Servo_motor.ino"
 }
