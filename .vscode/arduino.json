@@ -2,5 +2,5 @@
     "board": "arduino:avr:mega",
     "configuration": "cpu=atmega2560",
     "port": "COM4",
-    "sketch": "Labs\\Transistors_Hbrigde_Motors\\Servo_motor\\Servo_motor.ino"
+    "sketch": "Follow alongs\\MATLAB App Designer\\Arduino\\CommunicationMATLAB\\CommunicationMATLAB.ino"
 }
